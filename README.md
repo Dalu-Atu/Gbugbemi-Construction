@@ -18,7 +18,7 @@ A modern, responsive landing page for Gbugbemi Construction, a leading Nigerian 
 
 ## 🛠️ Tech Stack
 
-- **Frontend:** React.js, Next.js
+- **Frontend:** React.js
 - **Styling:** Tailwind CSS
 - **Animations:** Framer Motion
 - **Icons:** Lucide React
@@ -30,7 +30,7 @@ A modern, responsive landing page for Gbugbemi Construction, a leading Nigerian 
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/gbugbemi-construction.git
+git clone https://github.com/Dalu-Atu/gbugbemi-construction.git
 cd gbugbemi-construction
 ```
 
@@ -44,30 +44,99 @@ npm install
 npm run dev
 ```
 
-4. Open [http://localhost:3000](http://localhost:3000) in your browser.
+4. Open [http://localhost:5173](http://localhost:5173) in your browser.
 
 ## 🏗️ Project Structure
+# Gbugbemi Construction - Project Structure
 
 ```
 gbugbemi-construction/
-├── components/
-│   ├── Hero.jsx
-│   ├── Services.jsx
-│   ├── Projects.jsx
-│   ├── About.jsx
-│   ├── Contact.jsx
-│   └── Footer.jsx
-├── data/
-│   ├── projects.js
-│   └── services.js
-├── public/
-│   └── images/
-├── styles/
-│   └── globals.css
-├── pages/
-│   ├── index.js
-│   └── _app.js
-└── README.md
+├── 📁 node_modules/
+├── 📁 public/
+│   └── 📁 images/
+├── 📁 src/
+│   ├── 📁 pages/
+│   │   └── 📄 HomePage.jsx
+│   ├── 📁 ui/
+│   │   ├── 📄 CardUI.jsx
+│   │   ├── 📄 CarouselUI.jsx
+│   │   ├── 📄 ContactUI.jsx
+│   │   ├── 📄 FooterSection.jsx
+│   │   ├── 📄 ProjectSection.jsx
+│   │   └── 📄 ServiceSection.jsx
+│   ├── 📄 App.jsx
+│   ├── 📄 TestimonialSection.jsx
+│   ├── 📄 main.jsx
+│   └── 📄 index.css
+├── 📄 .gitignore
+├── 📄 eslint.config.js
+├── 📄 index.html
+├── 📄 package-lock.json
+├── 📄 package.json
+├── 📄 README.md
+└── 📄 vite.config.js
+```
+
+## 📋 File Descriptions
+
+### Root Files
+- `package.json` - Project dependencies and scripts
+- `package-lock.json` - Locked dependency versions
+- `vite.config.js` - Vite configuration file
+- `eslint.config.js` - ESLint configuration
+- `index.html` - Main HTML template
+- `.gitignore` - Git ignore rules
+- `README.md` - Project documentation
+
+### Source Directory (`src/`)
+- `main.jsx` - Application entry point
+- `App.jsx` - Main App component
+- `index.css` - Global styles
+
+### Pages Directory (`src/pages/`)
+- `HomePage.jsx` - Main landing page component
+
+### UI Components Directory (`src/ui/`)
+- `CardUI.jsx` - Reusable card components
+- `CarouselUI.jsx` - Image/content carousel
+- `ContactUI.jsx` - Contact form components
+- `FooterSection.jsx` - Website footer
+- `ProjectSection.jsx` - Projects showcase section
+- `ServiceSection.jsx` - Services overview section
+
+### Additional Components
+- `TestimonialSection.jsx` - Client testimonials section
+
+### Public Directory (`public/`)
+- `images/` - Static images and assets
+
+## 🚀 Quick Start
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
+```
+
+## 📦 Package.json Scripts
+
+```json
+{
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint src --ext js,jsx"
+  }
+}
 ```
 
 ## 🎨 Design System
