@@ -1,104 +1,145 @@
-# Gbugbemi Construction 🏗️
+# Gbugbemi Construction - Landing Page
 
-> Building Nigeria's Future, One Project at a Time
+A modern, responsive landing page for Gbugbemi Construction, a leading Nigerian construction company specializing in infrastructure development and industrial projects.
 
-[![Website](https://img.shields.io/badge/Website-gbugbemiconstruction.com-blue)](https://gbugbemiconstruction.com)
-[![License](https://img.shields.io/badge/License-COREN%20Certified-green)](#)
-[![Projects](https://img.shields.io/badge/Projects-₦17B%2B%20Value-orange)](#projects)
+## 🚀 Live Demo
 
-## About Us
+[View Live Site](https://gbugbemi-construction.vercel.app)
 
-Gbugbemi Construction is a leading construction company specializing in large-scale infrastructure development across Nigeria. We deliver world-class projects that drive economic growth and development.
+## 📋 Features
 
-## 🚀 Our Services
+- **Responsive Design** - Optimized for all devices (mobile, tablet, desktop)
+- **Modern UI/UX** - Clean, professional design with smooth animations
+- **Project Portfolio** - Interactive gallery showcasing completed projects
+- **Services Overview** - Detailed breakdown of construction services offered
+- **Contact Integration** - Contact forms with email integration
+- **Performance Optimized** - Fast loading times and SEO friendly
+- **Dark/Light Mode** - Theme switching capability
 
-- **Heavy Machinery Operations** - Site excavation and material handling
-- **Concrete Solutions** - Specialized flooring and mobile mixing services  
-- **Foundation Work** - Deep drilling and ground stabilization
-- **Road Construction** - Asphalt paving and highway rehabilitation
-- **Industrial Projects** - Petrochemical facilities and commercial developments
+## 🛠️ Tech Stack
 
-## 📋 Featured Projects
+- **Frontend:** React.js, Next.js
+- **Styling:** Tailwind CSS
+- **Animations:** Framer Motion
+- **Icons:** Lucide React
+- **Forms:** React Hook Form
+- **Deployment:** Vercel
+- **Package Manager:** npm
 
-| Project | Location | Value | Duration |
-|---------|----------|--------|----------|
-| Lagos Industrial Site Development | Lagos, Nigeria | ₦2.8B | 8 Months |
-| Lagos-Ibadan Express Road Rehabilitation | Lagos-Ogun Corridor | ₦5.7B | 15 Months |
-| Port Harcourt Petrochemical Foundation | Port Harcourt, Rivers | ₦3.2B | 10 Months |
-| Abuja Commercial Flooring Project | Abuja, FCT | ₦1.5B | 6 Months |
-| Kano Infrastructure Concrete Supply | Kano, Kano State | ₦2.1B | 12 Months |
-| Warri Deep Foundation Installation | Warri, Delta State | ₦1.9B | 9 Months |
+## 📦 Installation
 
-## 🛠️ Equipment & Technology
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/gbugbemi-construction.git
+cd gbugbemi-construction
+```
 
-- Skid Steer Loaders & Excavation Equipment
-- Mobile Concrete Mixers (DB400 Series)
-- Asphalt Paving & Compaction Machinery
-- Deep Foundation Drilling Rigs
-- Quality Control & Testing Equipment
+2. Install dependencies:
+```bash
+npm install
+```
 
-## ✅ Our Standards
+3. Run the development server:
+```bash
+npm run dev
+```
 
-- International safety standards and PPE compliance
-- Advanced construction equipment and technology
-- Skilled workforce and professional project management
-- Timely delivery and quality assurance
-- Environmental sustainability practices
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## 📊 Project Gallery
+## 🏗️ Project Structure
 
-### Site Excavation & Material Handling
-![Excavation Work](construction-1.jpg)
-*Heavy-duty skid steer operations for site preparation*
+```
+gbugbemi-construction/
+├── components/
+│   ├── Hero.jsx
+│   ├── Services.jsx
+│   ├── Projects.jsx
+│   ├── About.jsx
+│   ├── Contact.jsx
+│   └── Footer.jsx
+├── data/
+│   ├── projects.js
+│   └── services.js
+├── public/
+│   └── images/
+├── styles/
+│   └── globals.css
+├── pages/
+│   ├── index.js
+│   └── _app.js
+└── README.md
+```
 
-### Specialized Concrete Operations
-![Concrete Work](construction-2.jpg)
-*Professional concrete pouring with full PPE compliance*
+## 🎨 Design System
 
-### Foundation & Structural Work
-![Foundation Work](construction-3.jpg)
-*Precision rebar installation for industrial facilities*
+- **Primary Colors:** Blue (#1E40AF), Orange (#F97316)
+- **Typography:** Inter font family
+- **Breakpoints:** Mobile-first responsive design
+- **Components:** Reusable, modular components
 
-### Mobile Concrete Solutions
-![Concrete Mixer](construction-4.jpg)
-*On-site concrete production and delivery services*
+## 📱 Responsive Breakpoints
 
-### Road Construction & Paving
-![Road Work](construction-5.jpg)
-*Complete asphalt paving and surface treatment*
+- **Mobile:** 320px - 768px
+- **Tablet:** 768px - 1024px  
+- **Desktop:** 1024px+
 
-### Deep Foundation Drilling
-![Drilling Operations](construction-6.jpg)
-*Specialized drilling for ground stabilization*
+## 🔧 Available Scripts
 
-## 📞 Contact Information
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm start` - Start production server
+- `npm run lint` - Run ESLint
+- `npm run format` - Format code with Prettier
 
-- **Email:** info@gbugbemiconstruction.com
-- **Phone:** +234 (0) 800 GBUGBEMI
-- **Website:** [www.gbugbemiconstruction.com](https://gbugbemiconstruction.com)
-- **Address:** Lagos, Nigeria
+## 📊 Performance
 
-## 🏆 Certifications
+- **Lighthouse Score:** 95+
+- **First Contentful Paint:** <1.5s
+- **Largest Contentful Paint:** <2.5s
+- **Core Web Vitals:** All green
 
-- Nigerian Institute of Building (NIOB) Licensed
-- Council for the Regulation of Engineering in Nigeria (COREN) Certified
-- ISO 9001:2015 Quality Management System
-- OHSAS 18001 Occupational Health & Safety
+## 🚀 Deployment
 
-## 📈 Company Stats
+The site is deployed on Vercel with automatic deployments from the main branch.
 
-- **Founded:** 2015
-- **Projects Completed:** 50+
-- **Total Project Value:** ₦17+ Billion
-- **Locations:** Lagos, Abuja, Port Harcourt, Kano, Warri
-- **Employees:** 200+
+```bash
+npm run build
+npm run export  # if using static export
+```
+
+## 📧 Contact Integration
+
+Contact forms are integrated with:
+- EmailJS for form submissions
+- Form validation using React Hook Form
+- Success/error notifications
+
+## 🔄 Future Enhancements
+
+- [ ] Blog section for company updates
+- [ ] Client testimonials carousel
+- [ ] Project case studies with detailed pages
+- [ ] Admin panel for content management
+- [ ] Multi-language support (English/Yoruba)
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/new-feature`)
+3. Commit changes (`git commit -am 'Add new feature'`)
+4. Push to branch (`git push origin feature/new-feature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 📞 Support
+
+For support or questions about this project:
+- **Developer:** [Your Name](mailto:your.email@example.com)
+- **Client:** Gbugbemi Construction
 
 ---
 
-<div align="center">
-
-**Building Excellence | Delivering Quality | Ensuring Safety**
-
-Made with ❤️ in Nigeria 🇳🇬
-
-</div>
+Built with ❤️ using React.js 
