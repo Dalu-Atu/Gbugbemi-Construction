@@ -8,7 +8,7 @@ const Button = ({
   const baseStyles =
     "inline-flex items-center justify-center rounded-lg font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none";
   const variants = {
-    default: "bg-emerald-600 text-white hover:bg-orange-700",
+    default: "bg-emerald-600 text-white hover:bg-emerald-400",
     outline: "border border-current bg-transparent hover:bg-orange-50",
     secondary: "bg-slate-100 text-slate-900 hover:bg-slate-200",
   };
