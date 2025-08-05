@@ -14,99 +14,36 @@ import {
   Globe,
   FileCheck,
   Star,
+  HardHat,
+  Truck,
+  Home,
+  Settings,
+  Package,
+  AlertTriangle,
+  Eye,
+  Zap,
+  Trash2,
+  Wrench,
+  BookOpen,
+  Phone,
+  UserCheck,
+  Rotate3D,
+  ToolCase,
 } from "lucide-react";
 
 export const AboutSection = () => {
-  const [activeTab, setActiveTab] = useState("story");
   const [isVisible, setIsVisible] = useState(false);
-  const [hoveredStat, setHoveredStat] = useState(null);
-  const [playingVideo, setPlayingVideo] = useState(false);
+  const [activeTab, setActiveTab] = useState("certificates");
   const sectionRef = useRef(null);
-
-  const stats = [
-    {
-      id: "experience",
-      number: 25,
-      suffix: "+",
-      label: "Years Experience",
-      icon: Calendar,
-      description: "Industry-leading expertise",
-      color: "from-emerald-500 to-emerald-600",
-    },
-    {
-      id: "projects",
-      number: 500,
-      suffix: "+",
-      label: "Projects Completed",
-      icon: Building,
-      description: "Successfully delivered",
-      color: "from-blue-500 to-blue-600",
-    },
-    {
-      id: "team",
-      number: 150,
-      suffix: "+",
-      label: "Expert Team",
-      icon: Users,
-      description: "Certified professionals",
-      color: "from-purple-500 to-purple-600",
-    },
-    {
-      id: "awards",
-      number: 42,
-      suffix: "",
-      label: "Industry Awards",
-      icon: Trophy,
-      description: "Recognition for excellence",
-      color: "from-amber-500 to-amber-600",
-    },
-  ];
-
-  const features = [
-    {
-      icon: Shield,
-      title: "Fully Licensed",
-      subtitle: "All States & Federal",
-      description: "Comprehensive licensing across all jurisdictions",
-      color: "emerald",
-    },
-    {
-      icon: Award,
-      title: "Safety First",
-      subtitle: "OSHA Certified",
-      description: "Zero-accident track record for 5+ years",
-      color: "blue",
-    },
-    {
-      icon: Target,
-      title: "On-Time Delivery",
-      subtitle: "98% Success Rate",
-      description: "Consistent project completion within deadlines",
-      color: "purple",
-    },
-    {
-      icon: FileCheck,
-      title: "Certified Excellence",
-      subtitle: "ISO 9001",
-      description: "Quality management system certified",
-      color: "amber",
-    },
-  ];
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
           setIsVisible(true);
-          // Trigger countup animations
-          stats.forEach((stat, index) => {
-            setTimeout(() => {
-              animateNumber(stat.id, 0, stat.number, 2000);
-            }, index * 200);
-          });
         }
       },
-      { threshold: 0.3 }
+      { threshold: 0.1 }
     );
 
     if (sectionRef.current) {
@@ -116,197 +53,493 @@ export const AboutSection = () => {
     return () => observer.disconnect();
   }, []);
 
-  const animateNumber = (id, start, end, duration) => {
-    const startTime = Date.now();
-    const animate = () => {
-      const elapsed = Date.now() - startTime;
-      const progress = Math.min(elapsed / duration, 1);
-      const current = Math.floor(start + (end - start) * progress);
+  const services = [
+    {
+      icon: HardHat,
+      title: "Road Construction",
+      description:
+        "From rural roads to major highways, we construct durable and well-engineered road networks that stand the test of time.",
+      color: "emerald",
+    },
+    {
+      icon: Home,
+      title: "Residential & Commercial Buildings",
+      description:
+        "We bring your vision to life with modern, functional, and structurally sound buildings—designed to meet your needs and exceed expectations.",
+      color: "blue",
+    },
+    {
+      icon: Rotate3D,
+      title: "Bridge Construction",
+      description:
+        "Our team builds strong, safe, and reliable bridges that connect communities and support economic development.",
+      color: "purple",
+    },
+    {
+      icon: Settings,
+      title: "Maintenance Services",
+      description:
+        "We also offer repair, renovation, and ongoing maintenance services to keep your infrastructure in top shape.",
+      color: "amber",
+    },
+    {
+      icon: Package,
+      title: "Building Material Supply",
+      description:
+        "High-quality building materials such as sand, granite, cement, iron rods, and more—ensuring your project has everything it needs.",
+      color: "rose",
+    },
+  ];
 
-      const element = document.getElementById(`stat-${id}`);
-      if (element) {
-        element.textContent = current;
-      }
+  const safetyTenants = [
+    {
+      icon: HardHat,
+      title: "Wear Personal Protective Equipment (PPE)",
+      description:
+        "Always wear required PPE, such as hard hats, gloves, and safety glasses, on site.",
+    },
+    {
+      icon: AlertTriangle,
+      title: "Report Hazards and Incidents",
+      description:
+        "Immediately report all hazards and incidents to supervisors.",
+    },
+    {
+      icon: FileCheck,
+      title: "Follow Safe Work Procedures",
+      description: "Adhere to established procedures and guidelines for tasks.",
+    },
+    {
+      icon: Shield,
+      title: "Use Fall Protection",
+      description: "Utilize fall protection equipment when working at heights.",
+    },
+    {
+      icon: Zap,
+      title: "Electrical Safety",
+      description:
+        "Avoid electrical hazards by following lockout/tagout procedures.",
+    },
+    {
+      icon: Trash2,
+      title: "Maintain a Clean Workspace",
+      description: "Keep work areas clean and organized to prevent accidents.",
+    },
+    {
+      icon: ToolCase,
+      title: "Proper Tool Usage",
+      description:
+        "Use tools and equipment correctly and follow manufacturer guidelines.",
+    },
+    {
+      icon: BookOpen,
+      title: "Supervision and Training",
+      description: "Ensure workers receive proper training and supervision.",
+    },
+    {
+      icon: Phone,
+      title: "Emergency Preparedness",
+      description:
+        "Know emergency procedures, such as evacuation routes and first aid.",
+    },
+    {
+      icon: UserCheck,
+      title: "Accountability",
+      description:
+        "Take responsibility for your own safety and the safety of others on site.",
+    },
+  ];
 
-      if (progress < 1) {
-        requestAnimationFrame(animate);
-      }
-    };
-    requestAnimationFrame(animate);
+  const features = [
+    {
+      icon: Shield,
+      title: "Licensed & Insured",
+      subtitle: "Fully Certified",
+      description: "Comprehensive licensing and insurance coverage",
+      color: "emerald",
+    },
+    {
+      icon: Award,
+      title: "25+ Years Experience",
+      subtitle: "Industry Leader",
+      description: "Decades of expertise in construction industry",
+      color: "blue",
+    },
+    {
+      icon: Target,
+      title: "98% Success Rate",
+      subtitle: "Client Satisfaction",
+      description: "Consistent project completion within deadlines",
+      color: "purple",
+    },
+    {
+      icon: Users,
+      title: "Expert Team",
+      subtitle: "Skilled Professionals",
+      description: "Dedicated team committed to quality excellence",
+      color: "amber",
+    },
+  ];
+
+  const colorClasses = {
+    emerald: "from-emerald-500 to-emerald-600",
+    blue: "from-blue-500 to-blue-600",
+    purple: "from-purple-500 to-purple-600",
+    amber: "from-amber-500 to-amber-600",
+    rose: "from-rose-500 to-rose-600",
   };
+
+  const tabs = [
+    { id: "overview", label: "Overview", icon: Building },
+    { id: "services", label: "Services", icon: Wrench },
+    { id: "safety", label: "Safety", icon: Shield },
+    { id: "certificates", label: "Certificates", icon: Award },
+  ];
 
   return (
     <section
+      id="about"
       ref={sectionRef}
-      className="py-10 relative overflow-hidden bg-gradient-to-br from-slate-50 via-white to-emerald-50"
+      className="py-20 relative overflow-hidden bg-gradient-to-br from-slate-50 via-white to-emerald-50"
     >
       <div className="container mx-auto px-4 relative z-10">
         {/* Header */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 bg-emerald-100 text-emerald-700 px-4 py-0 rounded-full text-sm font-medium mb-6 border border-emerald-200">
+          <div className="inline-flex items-center gap-2 bg-emerald-100 text-emerald-700 px-6 py-2 rounded-full text-sm font-medium mb-6 border border-emerald-200">
             <Building className="w-4 h-4" />
-            About Gbugbemi Construction
+            About Gubemigentle Construction
           </div>
           <h2
-            className={`
-            text-3xl md:text-3xl font-bold mb-6 bg-gradient-to-r from-slate-800  to-slate-800 bg-clip-text text-transparent
-            transform transition-all duration-1000 ${
+            className={`text-3xl md:text-4xl  md:text-4xl font-bold mb-6 bg-gradient-to-r from-slate-800 to-emerald-600 bg-clip-text text-transparent transform transition-all duration-1000 ${
               isVisible
                 ? "translate-y-0 opacity-100"
                 : "translate-y-10 opacity-0"
-            }
-          `}
+            }`}
           >
-            Trusted and Certified
+            Building Excellence with Integrity
           </h2>
+          <p className="text-l text-slate-600 max-w-4xl mx-auto leading-relaxed">
+            At Gubemigentle Construction Company, we are committed to building
+            lasting infrastructure and delivering excellence in every project.
+            With a passion for quality and a strong focus on client
+            satisfaction, we provide dependable and efficient construction
+            services across Nigeria.
+          </p>
         </div>
 
-        {/* Interactive Stats */}
-        {/* <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
-          {stats.map((stat, index) => {
-            const Icon = stat.icon;
+        {/* Tab Navigation */}
+        <div className="flex flex-wrap justify-center mb-12 bg-white/80 backdrop-blur-sm rounded-2xl p-2 border border-slate-200 max-w-2xl mx-auto">
+          {tabs.map((tab) => {
+            const Icon = tab.icon;
             return (
-              <div
-                key={stat.id}
-                className={`
-                  group relative bg-white/80 backdrop-blur-md rounded-2xl p-6 
-                  border border-slate-200 hover:border-emerald-300
-                  shadow-lg hover:shadow-xl
-                  transform transition-all duration-500 hover:scale-105 hover:-translate-y-2
-                  ${
-                    isVisible
-                      ? "translate-y-0 opacity-100"
-                      : "translate-y-20 opacity-0"
-                  }
-                `}
-                style={{ transitionDelay: `${index * 150}ms` }}
-                onMouseEnter={() => setHoveredStat(stat.id)}
-                onMouseLeave={() => setHoveredStat(null)}
+              <button
+                key={tab.id}
+                onClick={() => setActiveTab(tab.id)}
+                className={`flex items-center gap-2 px-6 py-3 rounded-xl font-medium transition-all duration-300 ${
+                  activeTab === tab.id
+                    ? "bg-emerald-600 text-white shadow-lg"
+                    : "text-slate-600 hover:text-emerald-600 hover:bg-emerald-50"
+                }`}
               >
-                <div
-                  className="absolute inset-0 bg-gradient-to-br opacity-0 group-hover:opacity-10 transition-opacity duration-500 rounded-2xl"
-                  style={{
-                    background: `linear-gradient(135deg, ${
-                      stat.color.split(" ")[1]
-                    }, ${stat.color.split(" ")[3]})`,
-                  }}
-                />
-
-                <div className="relative z-10">
-                  <div
-                    className={`w-12 h-12 rounded-xl bg-gradient-to-br ${stat.color} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}
-                  >
-                    <Icon className="w-6 h-6 text-white" />
-                  </div>
-
-                  <div className="flex items-baseline gap-1 mb-2">
-                    <span
-                      id={`stat-${stat.id}`}
-                      className="text-3xl font-bold text-slate-800"
-                    >
-                      0
-                    </span>
-                    <span className="text-2xl font-bold text-emerald-600">
-                      {stat.suffix}
-                    </span>
-                  </div>
-
-                  <div className="text-slate-700 font-medium mb-1">
-                    {stat.label}
-                  </div>
-                  <div className="text-sm text-slate-500">
-                    {stat.description}
-                  </div>
-
-                  {hoveredStat === stat.id && (
-                    <div className="absolute -top-2 -right-2 w-4 h-4 bg-emerald-500 rounded-full animate-ping" />
-                  )}
-                </div>
-              </div>
+                <Icon className="w-4 h-4" />
+                {tab.label}
+              </button>
             );
           })}
-        </div> */}
+        </div>
 
-        {/* Main Content */}
-        <div className="grid lg:grid-cols-2 gap-16 items-start mb-20">
-          {/* Left Column - Interactive Content */}
-          <div>
-            {/* Features Grid */}
-            <div className="grid grid-cols-2 gap-4 mb-8">
-              {features.map((feature, index) => {
-                const Icon = feature.icon;
-                const colorClasses = {
-                  emerald: "from-emerald-500 to-emerald-600",
-                  blue: "from-blue-500 to-blue-600",
-                  purple: "from-purple-500 to-purple-600",
-                  amber: "from-amber-500 to-amber-600",
-                };
+        {/* Tab Content */}
+        <div className="mb-16">
+          {/* Overview Tab */}
+          {activeTab === "overview" && (
+            <div className="grid lg:grid-cols-2 gap-16 items-center">
+              {/* Left Column - Company Info */}
+              <div className="space-y-8">
+                <div>
+                  <h3 className="text-3xl md:text-4xl  font-bold text-slate-900 mb-6">
+                    Your Trusted Construction Partner
+                  </h3>
+                  <p className="text-lg text-slate-600 leading-relaxed mb-6">
+                    Whether you're constructing a new project or maintaining an
+                    existing one, Gubemigentle Construction Company is your
+                    trusted partner for quality, reliability, and results. We
+                    combine decades of experience with modern techniques to
+                    deliver exceptional outcomes.
+                  </p>
+                  <div className="grid grid-cols-2 gap-6">
+                    {features.map((feature, index) => {
+                      const Icon = feature.icon;
+                      return (
+                        <div
+                          key={index}
+                          className="bg-white/80 backdrop-blur-sm rounded-xl p-6 border border-slate-200 hover:border-emerald-300 hover:shadow-lg transition-all duration-300 group"
+                        >
+                          <div
+                            className={`w-12 h-12 rounded-lg bg-gradient-to-br ${
+                              colorClasses[feature.color]
+                            } flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}
+                          >
+                            <Icon className="w-6 h-6 text-white" />
+                          </div>
+                          <h4 className="text-slate-900 font-bold mb-1">
+                            {feature.title}
+                          </h4>
+                          <p className="text-emerald-600 text-sm font-medium mb-2">
+                            {feature.subtitle}
+                          </p>
+                          <p className="text-slate-600 text-sm">
+                            {feature.description}
+                          </p>
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+              </div>
 
-                return (
-                  <div
-                    key={index}
-                    className="group bg-white/80 backdrop-blur-sm rounded-xl p-4 border border-slate-200 hover:border-emerald-300 transition-all duration-300 hover:bg-white hover:shadow-lg"
-                  >
+              {/* Right Column - Stats & Visual */}
+              <div className="relative">
+                <div className="bg-gradient-to-br from-emerald-600 to-emerald-800 rounded-3xl p-8 text-white relative overflow-hidden">
+                  <div className="absolute inset-0 bg-black/10 rounded-3xl" />
+                  <div className="relative z-10">
+                    <h4 className="text-2xl font-bold mb-8">Our Impact</h4>
+                    <div className="grid grid-cols-2 gap-6">
+                      <div className="text-center">
+                        <div className="text-4xl font-bold mb-2">500+</div>
+                        <div className="text-emerald-100">
+                          Projects Completed
+                        </div>
+                      </div>
+                      <div className="text-center">
+                        <div className="text-4xl font-bold mb-2">25+</div>
+                        <div className="text-emerald-100">Years Experience</div>
+                      </div>
+                      <div className="text-center">
+                        <div className="text-4xl font-bold mb-2">98%</div>
+                        <div className="text-emerald-100">
+                          Client Satisfaction
+                        </div>
+                      </div>
+                      <div className="text-center">
+                        <div className="text-4xl font-bold mb-2">$1M+</div>
+                        <div className="text-emerald-100">Project Value</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {/* Services Tab */}
+          {activeTab === "services" && (
+            <div>
+              <div className="text-center mb-12">
+                <h3 className="text-3xl md:text-4xl  font-bold text-slate-900 mb-4">
+                  Our Core Services
+                </h3>
+                <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+                  Comprehensive construction solutions from infrastructure
+                  development to building material supply
+                </p>
+              </div>
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {services.map((service, index) => {
+                  const Icon = service.icon;
+                  return (
                     <div
-                      className={`w-10 h-10 rounded-lg bg-gradient-to-br ${
-                        colorClasses[feature.color]
-                      } flex items-center justify-center mb-3 group-hover:scale-110 transition-transform duration-300`}
+                      key={index}
+                      className="group bg-white/80 backdrop-blur-sm rounded-2xl p-8 border border-slate-200 hover:border-emerald-300 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2"
                     >
-                      <Icon className="w-5 h-5 text-white" />
+                      <div
+                        className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${
+                          colorClasses[service.color]
+                        } flex items-center justify-center mb-6 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300`}
+                      >
+                        <Icon className="w-8 h-8 text-white" />
+                      </div>
+                      <h4 className="text-xl font-bold text-slate-900 mb-4">
+                        {service.title}
+                      </h4>
+                      <p className="text-slate-600 leading-relaxed">
+                        {service.description}
+                      </p>
+                      <div className="mt-6 flex items-center text-emerald-600 font-medium group-hover:text-emerald-700 transition-colors duration-300">
+                        Learn More
+                        <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
+                      </div>
                     </div>
-                    <div className="font-semibold text-slate-800 mb-1">
-                      {feature.title}
-                    </div>
-                    <div className="text-sm text-emerald-600 mb-2">
-                      {feature.subtitle}
-                    </div>
-                    <div className="text-xs text-slate-500">
-                      {feature.description}
-                    </div>
-                  </div>
-                );
-              })}
+                  );
+                })}
+              </div>
             </div>
-          </div>
-          {/* Right Column - Interactive Media */}
-          <div className="relative">
-            {/* Main Image/Video Container */}
-            <div className="relative group mb-6">
-              <div className="relative overflow-hidden rounded-2xl shadow-2xl">
-                <img
-                  src="/certificate.jpeg"
-                  alt="Construction team"
-                  className="w-full h-[500px] object-cover transition-transform duration-700 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+          )}
+
+          {/* Safety Tab */}
+          {activeTab === "safety" && (
+            <div>
+              <div className="text-center mb-12">
+                <div className="inline-flex items-center justify-center w-20 h-20 bg-emerald-100 rounded-full mb-6">
+                  <Shield className="w-10 h-10 text-emerald-600" />
+                </div>
+                <h3 className="text-3xl md:text-4xl  font-bold text-slate-900 mb-4">
+                  Safety First - Our Ten Safety Tenants
+                </h3>
+                <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+                  At Gubemigentle Construction, safety is our top priority.
+                  These ten safety tenants guide every aspect of our work.
+                </p>
+              </div>
+              <div className="grid md:grid-cols-2 gap-6">
+                {safetyTenants.map((tenant, index) => {
+                  const Icon = tenant.icon;
+                  return (
+                    <div
+                      key={index}
+                      className="group bg-white/80 backdrop-blur-sm rounded-xl p-6 border border-slate-200 hover:border-emerald-300 hover:shadow-lg transition-all duration-300"
+                    >
+                      <div className="flex items-start space-x-4">
+                        <div className="flex-shrink-0">
+                          <div className="w-12 h-12 bg-emerald-600 text-white rounded-xl flex items-center justify-center font-bold text-lg">
+                            {index + 1}
+                          </div>
+                        </div>
+                        <div className="flex-1">
+                          <div className="flex items-center space-x-3 mb-3">
+                            <Icon className="w-5 h-5 text-emerald-600" />
+                            <h4 className="text-slate-900 font-bold">
+                              {tenant.title}
+                            </h4>
+                          </div>
+                          <p className="text-slate-600 text-sm">
+                            {tenant.description}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+              <div className="mt-12 bg-gradient-to-r from-emerald-600 to-emerald-700 rounded-2xl p-8 text-white text-center">
+                <h4 className="text-2xl font-bold mb-4">
+                  Our Safety Commitment
+                </h4>
+                <p className="text-emerald-100 text-lg max-w-3xl mx-auto">
+                  Display these tenants prominently in your workplace to remind
+                  workers of the importance of safety. Every team member is
+                  trained and committed to maintaining the highest safety
+                  standards on every project.
+                </p>
+              </div>
+            </div>
+          )}
+
+          {/* Certificates Tab */}
+          {activeTab === "certificates" && (
+            <div>
+              <div className="text-center mb-12">
+                <div className="inline-flex items-center justify-center w-20 h-20 bg-amber-100 rounded-full mb-6">
+                  <Award className="w-10 h-10 text-amber-600" />
+                </div>
+                <h3 className="text-3xl md:text-4xl  font-bold text-slate-900 mb-4">
+                  Our Certifications & Credentials
+                </h3>
+                <p className="text-l text-slate-600 max-w-3xl mx-auto">
+                  Fully licensed and certified to deliver exceptional
+                  construction services across Nigeria
+                </p>
               </div>
 
-              {/* Floating Stats Cards */}
-              <div className="absolute -top-6 -left-6 bg-white backdrop-blur-sm p-4 rounded-xl shadow-lg border border-slate-200 transform hover:scale-105 transition-transform duration-300">
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 bg-gradient-to-br from-emerald-500 to-emerald-600 rounded-lg flex items-center justify-center">
-                    <Users className="w-5 h-5 text-white" />
+              <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+                {/* Certificate 1 */}
+                <div className="group bg-white rounded-3xl p-8 shadow-2xl border border-slate-200 hover:border-emerald-300 transition-all duration-500 transform hover:-translate-y-2">
+                  <div className="relative mb-6">
+                    <div className="aspect-w-4 aspect-h-3 rounded-2xl overflow-hidden bg-gradient-to-br from-emerald-50 to-emerald-100">
+                      <img
+                        src="/certificate.jpeg"
+                        alt="Construction License Certificate"
+                        className="w-90 h-90 object-cover rounded-2xl group-hover:scale-105 transition-transform duration-500 ml-auto mr-auto"
+                      />
+                    </div>
+                    <div className="absolute top-4 right-4 bg-emerald-600 text-white px-3 py-1 rounded-full text-sm font-medium">
+                      Licensed
+                    </div>
                   </div>
-                  <div>
-                    <div className="text-xl font-bold text-slate-900">150+</div>
-                    <div className="text-sm text-slate-600">Expert Team</div>
+                  <h4 className="text-xl font-bold text-slate-900 mb-2">
+                    Bussiness Certification
+                  </h4>
+                  <p className="text-slate-600 mb-4">
+                    Official construction license certifying our authority to
+                    operate across Nigeria, ensuring all projects meet
+                    regulatory standards and compliance requirements.
+                  </p>
+                  <div className="flex items-center text-emerald-600 font-medium">
+                    <FileCheck className="w-4 h-4 mr-2" />
+                    Verified & Active
+                  </div>
+                </div>
+
+                {/* Certificate 2 */}
+                <div className="group bg-white rounded-3xl p-8 shadow-2xl border border-slate-200 hover:border-emerald-300 transition-all duration-500 transform hover:-translate-y-2">
+                  <div className="relative mb-6">
+                    <div className="aspect-w-4 aspect-h-3 rounded-2xl overflow-hidden bg-gradient-to-br from-blue-50 to-blue-100">
+                      <img
+                        src="/scum-cert.jpeg"
+                        alt="Professional Certification"
+                        className="w-full h-80 object-cover rounded-2xl group-hover:scale-105 transition-transform duration-500"
+                      />
+                    </div>
+                    <div className="absolute top-4 right-4 bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-medium">
+                      Certified
+                    </div>
+                  </div>
+                  <h4 className="text-xl font-bold text-slate-900 mb-2">
+                    SCUML Certification
+                  </h4>
+                  <p className="text-slate-600 mb-4">
+                    Professional construction certification validating our
+                    expertise, technical competency, and commitment to
+                    delivering high-quality construction services.
+                  </p>
+                  <div className="flex items-center text-blue-600 font-medium">
+                    <Star className="w-4 h-4 mr-2" />
+                    Excellence Certified
                   </div>
                 </div>
               </div>
 
-              <div className="absolute -bottom-6 -right-6 bg-white backdrop-blur-sm p-4 rounded-xl shadow-lg border border-slate-200 transform hover:scale-105 transition-transform duration-300">
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center">
-                    <CheckCircle className="w-5 h-5 text-white" />
-                  </div>
-                  <div>
-                    <div className="text-xl font-bold text-slate-900">98%</div>
-                    <div className="text-sm text-slate-600">Success Rate</div>
-                  </div>
+              {/* Additional Credentials */}
+              <div className="mt-12 grid md:grid-cols-3 gap-6">
+                <div className="text-center p-6 bg-white/80 backdrop-blur-sm rounded-xl border border-slate-200">
+                  <Shield className="w-12 h-12 text-emerald-600 mx-auto mb-4" />
+                  <h5 className="font-bold text-slate-900 mb-2">
+                    Fully Insured
+                  </h5>
+                  <p className="text-sm text-slate-600">
+                    Comprehensive insurance coverage for all projects
+                  </p>
+                </div>
+                <div className="text-center p-6 bg-white/80 backdrop-blur-sm rounded-xl border border-slate-200">
+                  <Globe className="w-12 h-12 text-blue-600 mx-auto mb-4" />
+                  <h5 className="font-bold text-slate-900 mb-2">
+                    Nationwide Coverage
+                  </h5>
+                  <p className="text-sm text-slate-600">
+                    Licensed to operate across all Nigerian states
+                  </p>
+                </div>
+                <div className="text-center p-6 bg-white/80 backdrop-blur-sm rounded-xl border border-slate-200">
+                  <Trophy className="w-12 h-12 text-amber-600 mx-auto mb-4" />
+                  <h5 className="font-bold text-slate-900 mb-2">
+                    Industry Recognition
+                  </h5>
+                  <p className="text-sm text-slate-600">
+                    25+ years of recognized excellence
+                  </p>
                 </div>
               </div>
             </div>
-          </div>
+          )}
         </div>
       </div>
     </section>

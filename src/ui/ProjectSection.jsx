@@ -58,7 +58,7 @@ export default function ProjectsSection() {
           <span className="inline-block px-4 py-1 text-sm font-semibold bg-emerald-100 text-emerald-700 rounded-full mb-4">
             Featured Work
           </span>
-          <h2 className="text-4xl md:text-5xl font-bold text-slate-900">
+          <h2 className="text-3xl md:text-4xl  font-bold text-slate-900">
             Recent Major Projects
           </h2>
           <p className="text-lg text-slate-700 max-w-2xl mx-auto mt-4">

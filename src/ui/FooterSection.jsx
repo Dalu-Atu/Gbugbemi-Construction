@@ -28,7 +28,7 @@ function FooterSection() {
 
           <div>
             <h4 className="text-lg font-semibold mb-4">Services</h4>
-            <ul className="space-y-2 text-slate-400">
+            <ul className="space-y-2 text-slate-400 ">
               <li>Road Construction</li>
               <li>Commercial Building</li>
               <li>Infrastructure Development</li>

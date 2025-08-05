@@ -25,6 +25,7 @@ import ContactSection from "../ui/ContactSection";
 import ServiceSection from "../ui/ServiceSection";
 import { Badge, Button, Separator } from "../ui/CardUi";
 import FooterSection from "../ui/FooterSection";
+import VideoSection from "../ui/VideoSection";
 
 export default function ContractorLanding() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -149,17 +150,17 @@ export default function ContractorLanding() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
                 size="lg"
-                className="bg-emerald-600 hover:bg-orange-700 text-lg px-8 py-3"
+                className="bg-emerald-600 hover:bg-emerald-500 text-lg px-8 py-3"
               >
                 <Phone className="mr-2 h-5 w-5" />
-                Contact Me
+                <a href="#contact">Contact Me</a>
               </Button>
               <Button
                 size="lg"
                 variant="outline"
                 className="text-white border-white hover:bg-white hover:text-slate-900 text-lg px-8 py-3 bg-transparent"
               >
-                View Our Work
+                <a href="#services">View our work</a>
               </Button>
             </div>
           </div>
@@ -191,6 +192,7 @@ export default function ContractorLanding() {
         </div>
       </section>
       <ServiceSection />
+      <VideoSection />
       <ProjectsSection />
       <AboutSection />
       <ContactSection />
