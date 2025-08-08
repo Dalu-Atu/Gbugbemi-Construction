@@ -16,13 +16,13 @@ function FooterSection() {
                   Gbubemi Gentle construction
                 </h3>
                 <p className="text-sm text-slate-400">
-                  Building Tomorrow's Infrastructure
+                  Lets Build a Better Future Together
                 </p>
               </div>
             </div>
             <p className="text-slate-400 mb-4">
-              Your trusted partner for large-scale construction projects across
-              the Southeast.
+              Our company is ready to deliver quality construction services to
+              our clients
             </p>
           </div>
 
@@ -50,9 +50,8 @@ function FooterSection() {
             <h4 className="text-lg font-semibold mb-4">Contact</h4>
             <ul className="space-y-2 text-slate-400">
               <li>+234(816) 381-4609</li>
-              <li>info@gbugbemiconstruction.com</li>
-              <li>1234 Construction Blvd</li>
-              <li> 1234 Sapele road</li>
+              <li>gentlegbubemi@gmail.com</li>
+              <li>No 41 Nepa Estate Shell Road Sapele Delta State</li>
             </ul>
           </div>
         </div>

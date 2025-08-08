@@ -36,11 +36,11 @@ const ContactSection = () => {
   };
 
   const socialLinks = [
-    {
-      icon: <Facebook className="h-5 w-5" />,
-      url: "https://www.facebook.com/gbubemi.gentle.constructions",
-      name: "Facebook",
-    },
+    // {
+    //   icon: <Facebook className="h-5 w-5" />,
+    //   url: "https://www.facebook.com/gbubemigentle.construction.company",
+    //   name: "Facebook",
+    // },
     {
       icon: <MessageCircle className="h-5 w-5" />,
       url: "https://wa.me/2348159019225",
@@ -89,6 +89,8 @@ const ContactSection = () => {
                     <p className="text-white font-semibold text-lg">
                       {" "}
                       +234 815 901 9225
+                      <br />
+                      +234 816 3814 609
                     </p>
                   </div>
                 </div>
@@ -101,7 +103,7 @@ const ContactSection = () => {
                   <div>
                     <p className="text-emerald-200 text-sm">Email</p>
                     <p className="text-white font-semibold text-lg">
-                      info@gubemigentle.com
+                      gentlegbubemi@gmail.com
                     </p>
                   </div>
                 </div>
@@ -120,6 +122,9 @@ const ContactSection = () => {
             </div>
             {/* Social Media */}
             <div>
+              <h4 className="text-2xl font-bold text-white mb-5">
+                Lets Build a Better Future Together
+              </h4>{" "}
               <h4 className="text-2xl font-bold text-white mb-5">Follow Us</h4>{" "}
               {/* Larger heading, increased margin */}
               <div className="flex space-x-3">
@@ -227,8 +232,10 @@ const ContactSection = () => {
                   <option value="bridge-construction">
                     Bridge Construction
                   </option>
+                  <option value="supplying">Supplying Quality Materials</option>
                   <option value="maintenance">Maintenance Services</option>
                   <option value="materials">Building Materials</option>
+                  <option value="maintenance">Maintainance & Renovation</option>
                 </select>
                 {/* You might want to add a custom arrow icon for the select box */}
               </div>

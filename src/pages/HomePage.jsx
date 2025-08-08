@@ -49,10 +49,10 @@ export default function ContractorLanding() {
               </div>
               <div>
                 <h1 className="text-xl font-bold text-slate-900">
-                  Gbubemi Gentle Construction
+                  GbubemiGentle Construction
                 </h1>
                 <p className="text-xs text-slate-600">
-                  Building Tomorrow's Infrastructure
+                  Lets Build a Better Future Together
                 </p>
               </div>
             </div>
@@ -139,11 +139,11 @@ export default function ContractorLanding() {
               Building Infrastructure with
               <span className="text-emerald-400">
                 {" "}
-                Gbubemi Gentle Constructions
+                GbubemiGentle Construction Company
               </span>
             </h1>
             <p className="text-l md:text-2xl mb-8 text-slate-200 max-w-3xl mx-auto">
-              Gbubemi Gentle construction delivers world-class road
+              GbubemiGentle construction Company delivers world-class road
               construction, commercial building, and infrastructure development
               services across the Nigeria and worldwide.
             </p>
