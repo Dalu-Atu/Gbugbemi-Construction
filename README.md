@@ -6,7 +6,7 @@ A modern, responsive landing page for Gbubemi Construction, a leading Nigerian c
 
 ## 🚀 Live Demo
 
-[View Live Site](https://gbugbemi-construction.vercel.app)
+[View Live Site](https://www.gbubemigentleconstruction.com/)
 
 ## 📋 Features
 
