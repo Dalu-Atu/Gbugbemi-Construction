@@ -1,6 +1,6 @@
-# Gbugbemi Construction - Landing Page
+# Gbubemi Construction - Landing Page
 
-A modern, responsive landing page for Gbugbemi Construction, a leading Nigerian construction company specializing in infrastructure development and industrial projects.
+A modern, responsive landing page for Gbubemi Construction, a leading Nigerian construction company specializing in infrastructure development and industrial projects.
 
 ## 🚀 Live Demo
 
@@ -29,17 +29,20 @@ A modern, responsive landing page for Gbugbemi Construction, a leading Nigerian 
 ## 📦 Installation
 
 1. Clone the repository:
+
 ```bash
 git clone https://github.com/Dalu-Atu/gbugbemi-construction.git
-cd gbugbemi-construction
+cd gbubemi-construction
 ```
 
 2. Install dependencies:
+
 ```bash
 npm install
 ```
 
 3. Run the development server:
+
 ```bash
 npm run dev
 ```
@@ -47,10 +50,11 @@ npm run dev
 4. Open [http://localhost:5173](http://localhost:5173) in your browser.
 
 ## 🏗️ Project Structure
-# Gbugbemi Construction - Project Structure
+
+# Gbubemi Construction - Project Structure
 
 ```
-gbugbemi-construction/
+gbubemi-construction/
 ├── 📁 node_modules/
 ├── 📁 public/
 │   └── 📁 images/
@@ -80,6 +84,7 @@ gbugbemi-construction/
 ## 📋 File Descriptions
 
 ### Root Files
+
 - `package.json` - Project dependencies and scripts
 - `package-lock.json` - Locked dependency versions
 - `vite.config.js` - Vite configuration file
@@ -89,14 +94,17 @@ gbugbemi-construction/
 - `README.md` - Project documentation
 
 ### Source Directory (`src/`)
+
 - `main.jsx` - Application entry point
 - `App.jsx` - Main App component
 - `index.css` - Global styles
 
 ### Pages Directory (`src/pages/`)
+
 - `HomePage.jsx` - Main landing page component
 
 ### UI Components Directory (`src/ui/`)
+
 - `CardUI.jsx` - Reusable card components
 - `CarouselUI.jsx` - Image/content carousel
 - `ContactUI.jsx` - Contact form components
@@ -105,9 +113,11 @@ gbugbemi-construction/
 - `ServiceSection.jsx` - Services overview section
 
 ### Additional Components
+
 - `TestimonialSection.jsx` - Client testimonials section
 
 ### Public Directory (`public/`)
+
 - `images/` - Static images and assets
 
 ## 🚀 Quick Start
@@ -149,7 +159,7 @@ npm run preview
 ## 📱 Responsive Breakpoints
 
 - **Mobile:** 320px - 768px
-- **Tablet:** 768px - 1024px  
+- **Tablet:** 768px - 1024px
 - **Desktop:** 1024px+
 
 ## 🔧 Available Scripts
@@ -195,9 +205,10 @@ npm run export  # if using static export
 ## 📞 Support
 
 For support or questions about this project:
+
 - **Developer:** [Daniel Atu](mailto:danieelatu@gmail.com)
-- **Client:** Gbugbemi Construction
+- **Client:** Gbubemi Construction
 
 ---
 
-Built with ❤️ using React.js 
+Built with ❤️ using React.js

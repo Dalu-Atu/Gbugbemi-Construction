@@ -13,7 +13,7 @@ function FooterSection() {
               </div>
               <div>
                 <h3 className="text-xl font-bold">
-                  Gbubemi Gentle construction
+                  Gbubemigentle construction
                 </h3>
                 <p className="text-sm text-slate-400">
                   Lets Build a Better Future Together
@@ -60,7 +60,7 @@ function FooterSection() {
 
         <div className="flex flex-col md:flex-row justify-between items-center">
           <p className="text-slate-400 text-sm">
-            © 2024 Gbubemi Gentle construction. All rights reserved.
+            © 2024 Gbubemigentle construction. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a href="#" className="text-slate-400 hover:text-white text-sm">
