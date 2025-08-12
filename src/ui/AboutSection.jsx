@@ -80,7 +80,7 @@ export const AboutSection = () => {
       icon: IterationCcw,
       title: "Heavy Equipment services",
       description:
-        "oUrr team is capable of taking in any heavy equipment services required",
+        "Our team is capable of taking in any heavy equipment services required",
       color: "emerald",
     },
     {
