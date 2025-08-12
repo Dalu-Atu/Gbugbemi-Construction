@@ -29,6 +29,7 @@ import {
   UserCheck,
   Rotate3D,
   ToolCase,
+  IterationCcw,
 } from "lucide-react";
 
 export const AboutSection = () => {
@@ -70,21 +71,28 @@ export const AboutSection = () => {
     },
     {
       icon: Rotate3D,
-      title: "Bridge Construction",
+      title: "Building of Houses and Bridges",
       description:
         "Our team builds strong, safe, and reliable bridges that connect communities and support economic development.",
       color: "purple",
     },
     {
+      icon: IterationCcw,
+      title: "Heavy Equipment services",
+      description:
+        "oUrr team is capable of taking in any heavy equipment services required",
+      color: "emerald",
+    },
+    {
       icon: Settings,
-      title: "Maintenance Services",
+      title: "Maintenance and renovation Services",
       description:
         "We also offer repair, renovation, and ongoing maintenance services to keep your infrastructure in top shape.",
       color: "amber",
     },
     {
       icon: Package,
-      title: "Building Material Supply",
+      title: "Supply Quality Materials",
       description:
         "High-quality building materials such as sand, granite, cement, iron rods, and more—ensuring your project has everything it needs.",
       color: "rose",
@@ -160,7 +168,7 @@ export const AboutSection = () => {
     },
     {
       icon: Award,
-      title: "25+ Years Experience",
+      title: "10+ Years Experience",
       subtitle: "Industry Leader",
       description: "Decades of expertise in construction industry",
       color: "blue",
@@ -207,7 +215,7 @@ export const AboutSection = () => {
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 bg-emerald-100 text-emerald-700 px-6 py-2 rounded-full text-sm font-medium mb-6 border border-emerald-200">
             <Building className="w-4 h-4" />
-            About Gubemigentle Construction
+            About Gbubemigentle Construction
           </div>
           <h2
             className={`text-3xl md:text-4xl  md:text-4xl font-bold mb-6 bg-gradient-to-r from-slate-800 to-emerald-600 bg-clip-text text-transparent transform transition-all duration-1000 ${
@@ -219,7 +227,7 @@ export const AboutSection = () => {
             Building Excellence with Integrity
           </h2>
           <p className="text-l text-slate-600 max-w-4xl mx-auto leading-relaxed">
-            At Gubemigentle Construction Company, we are committed to building
+            At Gbubemigentle Construction Company, we are committed to building
             lasting infrastructure and delivering excellence in every project.
             With a passion for quality and a strong focus on client
             satisfaction, we provide dependable and efficient construction
@@ -261,7 +269,7 @@ export const AboutSection = () => {
                   </h3>
                   <p className="text-lg text-slate-600 leading-relaxed mb-6">
                     Whether you're constructing a new project or maintaining an
-                    existing one, Gubemigentle Construction Company is your
+                    existing one, Gbubemigentle Construction Company is your
                     trusted partner for quality, reliability, and results. We
                     combine decades of experience with modern techniques to
                     deliver exceptional outcomes.
@@ -311,7 +319,7 @@ export const AboutSection = () => {
                         </div>
                       </div>
                       <div className="text-center">
-                        <div className="text-4xl font-bold mb-2">25+</div>
+                        <div className="text-4xl font-bold mb-2">10+</div>
                         <div className="text-emerald-100">Years Experience</div>
                       </div>
                       <div className="text-center">
@@ -386,7 +394,7 @@ export const AboutSection = () => {
                   Safety First - Our Ten Safety Tenants
                 </h3>
                 <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-                  At Gubemigentle Construction, safety is our top priority.
+                  At Gbubemigentle Construction, safety is our top priority.
                   These ten safety tenants guide every aspect of our work.
                 </p>
               </div>
@@ -534,7 +542,7 @@ export const AboutSection = () => {
                     Industry Recognition
                   </h5>
                   <p className="text-sm text-slate-600">
-                    25+ years of recognized excellence
+                    10+ years of recognized excellence
                   </p>
                 </div>
               </div>

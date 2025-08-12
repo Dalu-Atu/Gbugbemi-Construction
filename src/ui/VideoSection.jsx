@@ -52,7 +52,7 @@ const VideoSection = () => {
             See Our Work in Action
           </h2>
           <p className="text-l text-slate-200 max-w-3xl mx-auto">
-            Discover how Gubemigentle Construction transforms communities
+            Discover how Gbubemigentle Construction transforms communities
             through quality infrastructure and construction excellence.
           </p>
         </div>
@@ -123,7 +123,7 @@ const VideoSection = () => {
             </div>
             <div className="text-center transform hover:scale-105 transition-transform duration-300">
               <div className="text-3xl font-bold text-white mb-2 animate-pulse">
-                25+
+                10+
               </div>
               <div className="text-emerald-200">Years Experience</div>
             </div>
@@ -150,7 +150,7 @@ const VideoSection = () => {
                 </li>
                 <li className="flex items-center">
                   <div className="w-2 h-2 bg-emerald-400 rounded-full mr-3"></div>
-                  25+ Years of Construction Excellence
+                  10+ Years of Construction Excellence
                 </li>
                 <li className="flex items-center">
                   <div className="w-2 h-2 bg-emerald-400 rounded-full mr-3"></div>

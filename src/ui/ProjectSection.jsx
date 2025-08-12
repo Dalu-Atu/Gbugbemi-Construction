@@ -10,7 +10,6 @@ const projects = [
     duration: "8 Months",
     description:
       "Heavy machinery excavation and site preparation for major industrial complex.",
-    value: "₦2.8M",
   },
   {
     image: "construction-2.jpeg",
@@ -19,7 +18,6 @@ const projects = [
     duration: "6 Months",
     description:
       "Specialized concrete flooring installation for commercial warehouse facilities.",
-    value: "₦1.5M",
   },
   {
     image: "/construction-3.jpeg",
@@ -28,7 +26,6 @@ const projects = [
     duration: "10 Months",
     description:
       "Reinforcement steel installation for petrochemical processing plant foundation.",
-    value: "₦3.2M",
   },
 ];
 
@@ -86,9 +83,7 @@ export default function ProjectsSection() {
                   alt={project.title}
                   className="w-full h-full object-cover transform group-hover:scale-105 transition duration-500"
                 />
-                <div className="absolute top-3 right-3 bg-white/80 text-slate-800 px-3 py-1 text-sm rounded-full shadow">
-                  {project.value}
-                </div>
+                <div className="absolute top-3 right-3 bg-white/80 text-slate-800 px-3 py-1 text-sm rounded-full shadow"></div>
               </div>
               <div className="p-5">
                 <h3 className="text-xl font-semibold mb-2 text-slate-800">

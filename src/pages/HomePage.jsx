@@ -32,7 +32,7 @@ export default function ContractorLanding() {
 
   const stats = [
     { number: "500+", label: "Projects Completed" },
-    { number: "25+", label: "Years Experience" },
+    { number: "10+", label: "Years Experience" },
     { number: "$1000+", label: "Total Project Value" },
     { number: "98%", label: "Client Satisfaction" },
   ];
