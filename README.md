@@ -1,10 +1,12 @@
+
 # Gbubemi Construction - Landing Page
+![Demo](./public/demo.gif)
 
 A modern, responsive landing page for Gbubemi Construction, a leading Nigerian construction company specializing in infrastructure development and industrial projects.
 
 ## 🚀 Live Demo
 
-[View Live Site](https://gbugbemi-construction.vercel.app)
+[View Live Site](https://www.gbubemigentleconstruction.com/)
 
 ## 📋 Features
 
