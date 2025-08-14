@@ -27,12 +27,17 @@ function FooterSection() {
           </div>
 
           <div>
-            <h4 className="text-lg font-semibold mb-4">Services</h4>
+            <h4 className="text-lg font-semibold mb-4">Our Services Include</h4>
             <ul className="space-y-2 text-slate-400 ">
               <li>Road Construction</li>
-              <li>Commercial Building</li>
-              <li>Infrastructure Development</li>
+              <li>Building Houses and Bridges</li>
+              <li>Commercial Building </li>
               <li>Heavy Equipment Services</li>
+              <li>Maintanace and Renovation Services</li>
+              <li>
+                Supplying quality materials like sand, granite, cement, rods and
+                more
+              </li>
             </ul>
           </div>
 

@@ -34,7 +34,7 @@ import {
 
 export const AboutSection = () => {
   const [isVisible, setIsVisible] = useState(false);
-  const [activeTab, setActiveTab] = useState("certificates");
+  const [activeTab, setActiveTab] = useState("services");
   const sectionRef = useRef(null);
 
   useEffect(() => {
