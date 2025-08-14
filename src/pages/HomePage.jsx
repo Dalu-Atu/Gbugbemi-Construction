@@ -139,8 +139,9 @@ export default function ContractorLanding() {
               Building Infrastructure with
               <span className="text-emerald-400">
                 {" "}
-                Gbubemigentle Construction Company
+                Gbubemigentle Construction
               </span>
+              Company Limited
             </h1>
             <p className="text-l md:text-2xl mb-8 text-slate-200 max-w-3xl mx-auto">
               Gbubemigentle construction Company delivers world-class road
