@@ -48,7 +48,7 @@ export default function ContractorLanding() {
                 <HardHat className="h-6 w-6 text-white" />
               </div>
               <div>
-                <h1 className="text-xl font-bold text-slate-900">
+                <h1 className="text-l font-bold text-slate-900">
                   Gbubemigentle Construction
                 </h1>
                 <p className="text-xs text-slate-600">

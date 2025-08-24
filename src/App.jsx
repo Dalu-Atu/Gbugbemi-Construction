@@ -1,7 +1,13 @@
 import HomePage from "./pages/HomePage";
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
-  return <HomePage />;
+  return (
+    <>
+      <Analytics />
+      <HomePage />;
+    </>
+  );
 }
 
 export default App;
