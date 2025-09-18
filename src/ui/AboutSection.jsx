@@ -30,6 +30,9 @@ import {
   Rotate3D,
   ToolCase,
   IterationCcw,
+  Grid,
+  Paintbrush,
+  Droplet,
 } from "lucide-react";
 
 export const AboutSection = () => {
@@ -54,50 +57,79 @@ export const AboutSection = () => {
     return () => observer.disconnect();
   }, []);
 
-  const services = [
-    {
-      icon: HardHat,
-      title: "Road Construction",
-      description:
-        "From rural roads to major highways, we construct durable and well-engineered road networks that stand the test of time.",
-      color: "emerald",
-    },
-    {
-      icon: Home,
-      title: "Residential & Commercial Buildings",
-      description:
-        "We bring your vision to life with modern, functional, and structurally sound buildings—designed to meet your needs and exceed expectations.",
-      color: "blue",
-    },
-    {
-      icon: Rotate3D,
-      title: "Building of Houses and Bridges",
-      description:
-        "Our team builds strong, safe, and reliable bridges that connect communities and support economic development.",
-      color: "purple",
-    },
-    {
-      icon: IterationCcw,
-      title: "Heavy Equipment services",
-      description:
-        "Our team is capable of taking in any heavy equipment services required",
-      color: "emerald",
-    },
-    {
-      icon: Settings,
-      title: "Maintenance and renovation Services",
-      description:
-        "We also offer repair, renovation, and ongoing maintenance services to keep your infrastructure in top shape.",
-      color: "amber",
-    },
-    {
-      icon: Package,
-      title: "Supply Quality Materials",
-      description:
-        "High-quality building materials such as sand, granite, cement, iron rods, and more—ensuring your project has everything it needs.",
-      color: "rose",
-    },
-  ];
+const services = [
+  {
+    icon: HardHat,
+    title: "Road Construction",
+    description:
+      "From rural roads to major highways, we construct durable and well-engineered road networks that stand the test of time.",
+    color: "emerald",
+  },
+  {
+    icon: Home,
+    title: "Residential & Commercial Buildings",
+    description:
+      "We bring your vision to life with modern, functional, and structurally sound buildings—designed to meet your needs and exceed expectations.",
+    color: "blue",
+  },
+  {
+    icon: Rotate3D,
+    title: "Building of Houses and Bridges",
+    description:
+      "Our team builds strong, safe, and reliable bridges that connect communities and support economic development.",
+    color: "purple",
+  },
+  {
+    icon: IterationCcw,
+    title: "Heavy Equipment services",
+    description:
+      "Our team is capable of taking in any heavy equipment services required",
+    color: "emerald",
+  },
+  {
+    icon: Settings,
+    title: "Maintenance and renovation Services",
+    description:
+      "We also offer repair, renovation, and ongoing maintenance services to keep your infrastructure in top shape.",
+    color: "amber",
+  },
+  {
+    icon: Package,
+    title: "Supply Quality Materials",
+    description:
+      "High-quality building materials such as sand, granite, cement, iron rods, and more—ensuring your project has everything it needs.",
+    color: "rose",
+  },
+  {
+    icon: Zap, // Example icon – you can change this
+    title: "Electrical Wiring",
+    description:
+      "Safe and efficient electrical wiring for residential, commercial, and industrial buildings.",
+    color: "emerald",
+  },
+  {
+    icon: Grid, // Example icon – adjust to your preferred one
+    title: "Tiling",
+    description:
+      "Expert tiling services to give your floors and walls a clean, polished, and modern look.",
+    color: "amber",
+  },
+  {
+    icon: Paintbrush, // Example icon – change if needed
+    title: "Painting",
+    description:
+      "Interior and exterior painting services using durable and aesthetic finishes tailored to your taste.",
+    color: "rose",
+  },
+  {
+    icon: Droplet, // Example icon – swap with your icon set
+    title: "Plumbing",
+    description:
+      "Reliable plumbing installations and repairs to ensure clean water access and proper drainage.",
+    color: "purple",
+  },
+];
+
 
   const safetyTenants = [
     {

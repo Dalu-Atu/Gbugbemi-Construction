@@ -21,8 +21,7 @@ function FooterSection() {
               </div>
             </div>
             <p className="text-slate-400 mb-4">
-              Our company is ready to deliver quality construction services to
-              our clients
+              Your trusted partner for quality construction solutions!
             </p>
           </div>
 
@@ -38,6 +37,17 @@ function FooterSection() {
                 Supplying quality materials like sand, granite, cement, rods and
                 more
               </li>
+            </ul>
+          </div>
+          <div>
+            <h4 className="text-lg font-semibold mb-4 mt-4">
+              Professional Services Include
+            </h4>
+            <ul className="space-y-2 text-slate-400 ">
+              <li>Electrical Wiring</li>
+              <li>Tiling</li>
+              <li>Painting </li>
+              <li>Plumbing</li>
             </ul>
           </div>
 
@@ -65,7 +75,7 @@ function FooterSection() {
 
         <div className="flex flex-col md:flex-row justify-between items-center">
           <p className="text-slate-400 text-sm">
-            © 2024 Gbubemigentle construction. All rights reserved.
+            © 2025 Gbubemigentle construction. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a href="#" className="text-slate-400 hover:text-white text-sm">
