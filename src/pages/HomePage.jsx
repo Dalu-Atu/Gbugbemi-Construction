@@ -437,15 +437,22 @@ const Header = ({ content }) => {
           {/* Logo */}
           <a href="#" className="flex items-center gap-2 group">
             <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-amber-400 to-yellow-500 rounded-lg blur-sm opacity-75 group-hover:opacity-100 transition-opacity"></div>
-              <div className="relative bg-gradient-to-br from-amber-400 to-yellow-600 p-2 rounded-lg transform group-hover:scale-110 transition-transform">
-                <Zap className="w-5 h-5 text-white" strokeWidth={2.5} />
+              {/* Glow effect */}
+
+
+              {/* Actual Logo Image */}
+              <div className="relative  transform group-hover:scale-110 transition-transform">
+                <img
+                  src={content.logo}
+                  alt="Logo"
+                  className="w-20 h-10 object-contain"
+                />
               </div>
             </div>
-            <span className="sm:text-2xl font-bold bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent">
+
+            <span className="sm:text-1xl font-bold bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent">
               {content.title}
             </span>
-            <span></span>
           </a>
 
           {/* Desktop Navigation */}
@@ -506,6 +513,7 @@ const Header = ({ content }) => {
               {item}
             </a>
           ))}
+
           <a
             href="#contact"
             onClick={() => setIsOpen(false)}
@@ -531,6 +539,7 @@ const Header = ({ content }) => {
     </header>
   );
 };
+
 
 /** 2. Hero Section (Edge Case: Image Loading) **/
 const Hero = ({ content }) => {
@@ -702,7 +711,7 @@ const About = ({ content }) => (
           <div className="relative rounded-2xl overflow-hidden shadow-2xl transform transition-transform duration-500 hover:scale-[1.01]">
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-60 z-10"></div>
             <img
-              src={content.img}
+              src={"construction-2.jpeg"}
               alt="Construction Overview"
               className="object-cover w-full h-[500px]"
               loading="lazy"
